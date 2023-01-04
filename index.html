@@ -13,25 +13,41 @@
       background: #FDFDFE;
     }
     .container-md {
-      overflow:hidden
-      
     }
     .left{
-      background: #EEE
+      background: #f7f9ff; 
+	  border-right:none !important;
+	  border-color: #004eff99 !important;
+      transition: 0.4s;
+	  
+	  
     }
-    @media (min-width: 768px)
-    .container-md {
-      border-radius:20px;
+	.left:hover{
+	  transform:scale(1.05);
+	  border-color: #004eff !important;
+	  z-index:1000
+	}
+	.right{
+      background: #fff7fa; 
+	  border-color: #ff2a6c99 !important;
+	  border-left:none !important;
+      transition: 0.4s;
+	  
     }
+	.right:hover{
+	  transform:scale(1.05);
+	  border-color: #ff2a6c !important;
+	  z-index:1000
+	}
   </style>
 </head>
 <body>
-   <div class="container-md border my-md-5">
+   <div class="container-md my-md-5">
     <div class="row">
-      <div class="col-6 left p-2 p-md-4">
+      <div class="col-6 left border p-2 p-md-4">
         <div class="text-center">mutsuki6 <span class="badge bg-primary">صاحبها</span></div>
       </div>
-      <div class="col-6 right p-2 p-md-4">
+      <div class="col-6 right border p-2 p-md-4">
         <div class="text-center">yayoi17 <span class="badge bg-secondary">坏蛋反派</span></div>
       </div>
     </div>

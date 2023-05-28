@@ -1,0 +1,147 @@
+#text {
+	position: relative;
+}
+
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+hr {
+	size: 0.3em;
+	align: left;
+	color: #744a00;
+}
+
+table {
+  margin : auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+	color: #412700;
+}
+
+img {
+  margin-right: 5px;
+}
+
+td {
+padding: 5px;
+}
+
+body {
+	background: #FFFBC6;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 10px;
+	width: 44em;
+}
+
+b {
+  color: red;
+  }
+
+.trtitle {
+  background:#FfBfff;
+  }
+  
+.trodd {
+  background:#7FFFFF;
+  }  
+
+.treven {
+  background:#BFffff;
+  }  
+  
+a:link {
+	text-decoration: none;
+	color: blue;
+}
+a:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+#navbar {
+	position: relative;
+//	top: 20px;
+//	left: 2em;
+	z-index: 9;
+}
+
+#navbar, #navbar ul {
+	display: block;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#navbar a:link {
+	text-decoration: none;
+	color: black;
+}
+#navbar a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+#navbar a {
+	display: block;
+	width: 11em
+}
+#navbar a:hover {
+	text-decoration: underline
+}
+#navbar, #navbar ul {
+	display: block;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#navbar li {
+	float: left;
+	width: 11em;
+	text-align: left;
+	background: #F8E0E0;
+}
+
+#navbar li:hover {
+	background: #F88080;
+//	padding-left: 2px
+}
+#navbar li ul {
+	display: none
+}
+#navbar li:hover ul {
+	position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	background: #F8C0C0;
+	width: 11em;
+}
+#navbar li ul li {
+	float: none;
+	width: auto;
+	position: relative;
+	padding-top: 3px;
+	font-size: 85%;
+}
+
+#navbar li:hover ul li {
+	border: none;
+//	padding: 2px;
+}
+
+#footer {
+	font-size: 60%;
+ } 
+
+ 

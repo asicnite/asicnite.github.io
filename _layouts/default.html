@@ -1,25 +1,54 @@
----
-layout: base
----
-
-<div class="intro-header"></div>
-
-<main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
-  {% if page.before-content %}
-    <div class="before-content">
-      {% for file in page.before-content %}
-        {% include {{ file }} %}
-      {% endfor %}
-    </div>
-  {% endif %}
-
-  {{ content }}
-
-  {% if page.after-content %}
-    <div class="after-content">
-      {% for file in page.after-content %}
-        {% include {{ file }} %}
-      {% endfor %}
-    </div>
-  {% endif %}
-</main>
+<html>
+	<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="theme-color" content="#E6F6F6">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
+        <link rel="icon" href="/favicon.gif" type="image/x-icon"/>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+		<title>{% if page.title != nil %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<style>
+			{% include style.html %}
+		</style>
+	</head>
+	<body>
+		<div class="nof">
+			<div class="header-stand"></div>
+			<header>
+				<div class="wrapper">
+					<a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
+				</div>
+			</header>
+			<div class="wrapper">
+				<div class="head-menu"></div>
+				<div class="head-site-info"></div>
+				{{ content }}
+			</div>
+		</div>
+		<footer>
+			&copy; 2020 - {{ site.time | date: "%Y" }} {{ site.title }}<br/>
+			<span id="rt"></span><br/>
+			<script type="text/javascript">
+				function runtime(){
+					// 初始时间，月/日/年 时:分:秒
+					X = new Date("12/11/2021 17:24:41");
+					Y = new Date();
+					T = (Y.getTime()-X.getTime());
+					M = 24*60*60*1000;
+					a = T/M;
+					A = Math.floor(a);
+					b = (a-A)*24;
+					B = Math.floor(b);
+					c = (b-B)*60;
+					C = Math.floor((b-B)*60);
+					D = Math.floor((c-C)*60);
+					//信息写入到DIV中
+					rt.innerHTML = "本站已运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"
+				}
+				setInterval(runtime, 1000);
+			</script>
+			{{ site.description }}
+		</footer>
+	</body>
+</html>

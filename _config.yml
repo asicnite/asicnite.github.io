@@ -1,10 +1,10 @@
-title: Your Title
-description: Your Description. version 1.2
-author: username
+title: AbualHubb
+description: 我在这里上传已完成的文章. version 1.2
+author: AbualHubb
 permalink: /:title.html/
-url: https://username.github.io
+url: https://asicnite.github.io
 paginate: 7
 paginate_path: "/page:num"
-repo: username.github.io
-owner: username
+repo: asicnite.github.io
+owner: asicnite
 

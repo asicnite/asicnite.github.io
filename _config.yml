@@ -2,7 +2,7 @@ title: AbualHubb
 description: 我在这里上传已完成的文章. version 1.2
 author: AbualHubb
 permalink: /:title.html/
-url: https://asicnite.github.io
+url: https://arpenter.cc/
 paginate: 7
 paginate_path: "/page:num"
 repo: asicnite.github.io

@@ -161,17 +161,26 @@ footer {
 .box-note {
     background: #0066FF22;
 	border-left: 2px solid #0066FF;
- 	posititon: relative;
-    border-radius: 5px;
-    padding: 20px 10px 5px 10px;
+ 	position: relative;
+    border-radius: 8px;
+    padding: 30px 10px 5px 10px;
 }
 .box-note::before {
     content: "注解";
 	position: absolute;
+    padding-left:30px
+    color: #0066FF;
     top:10px; 
     left:20px;
     font-size:1em;
 	font-weight:bold;
+    font-family: "Font Awesome 5 Free", sans-serif
+}
+.box-note::before::after {what's
+    content: "\f040";
+    transform: translateY(-50%);
+    color:#0066FF;
+    font-weight:900;
 }
 .highlighter-rouge{margin:1em 0}
 .highlighter-rouge pre{background-color:#FAFAFA;font-size:.7em;line-height:1.78;padding:16px;border-radius:10px;overflow:auto}
